@@ -11,6 +11,7 @@ import Util from "@/composables/util"
 // 翻訳
 import translationEn from "@/translations/en.json"
 import translationJa from "@/translations/ja.json"
+import translationKo from "@/translations/ko.json"
 
 Util.proxyFetch()
 
@@ -23,6 +24,7 @@ app.directive("intersection-observer", IntersectionObserverDirective)
 const translations = {
   en: translationEn,
   ja: translationJa,
+  ko: translationKo,
 }
 app.use(i18n, translations)
 
